@@ -89,7 +89,7 @@ console.log("Challenge 3: ", largeShirts);
 // The donations need to be tallied up and reported for tax purposes. Add up all the donations into a ticketPriceTotal array and log the result
 let ticketPriceTotal = runners.reduce(function (total, ticketprice) {
     return total + ticketprice.donation;
-}, 0)
+}, 0);
 
 console.log(`Challenge 4: $${ticketPriceTotal}`);
 
@@ -115,3 +115,15 @@ let thankYous = runners.map(a => `Dear ${a.company_name},
 Thank you so much for your donation of $${a.donation}! With your help, we raised $${ticketPriceTotal} for charity.`);
 
 console.log("Challenge 5, #3: ", thankYous)
+
+
+
+///
+
+
+const newRunner = runners.map(a,i => a[i].company_name = "x");
+
+
+        // return runners[49] = {"id":50,"first_name":"x","last_name":"x","email":"x","shirt_size":"M","company_name":"Gabtype","donation":171};
+
+console.log(newRunner)
