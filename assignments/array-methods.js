@@ -115,15 +115,3 @@ let thankYous = runners.map(a => `Dear ${a.company_name},
 Thank you so much for your donation of $${a.donation}! With your help, we raised $${ticketPriceTotal} for charity.`);
 
 console.log("Challenge 5, #3: ", thankYous)
-
-
-
-///
-
-
-const newRunner = runners.map(a,i => a[i].company_name = "x");
-
-
-        // return runners[49] = {"id":50,"first_name":"x","last_name":"x","email":"x","shirt_size":"M","company_name":"Gabtype","donation":171};
-
-console.log(newRunner)
