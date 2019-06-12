@@ -1,6 +1,17 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function prettyKitty(name, breed) {
+  let entry = `${name} the ${breed}`;
+  console.log(`Is ${entry} the prettiest kitty?`);
+
+  function hmm() {
+    console.log(`Wow! ${entry} totally IS the prettiest kitty and deserves a treat!`)
+  }
+ hmm();
+}
+
+prettyKitty("Princess Caroline", "Persian");
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
